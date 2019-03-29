@@ -1,0 +1,44 @@
+{
+  "name": "acui5learn2",
+  "version": "1.0.0",
+  "description": "leanring ui5, again",
+  "scripts": {
+    "start": "ui5 serve",
+    "lint": "eslint webapp",
+    "karma": "karma start",
+    "karma-ci": "karma start karma-ci.conf.js",
+    "watch": "start-server-and-test start http://localhost:8080 karma",
+    "test": "npm run lint && rimraf coverage && start-server-and-test start http://localhost:8080 karma-ci",
+    "build": "rimraf dist && ui5 build --a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvachien/acui5learn2.git"
+  },
+  "keywords": [
+    "openui5",
+    "sap",
+    "learning"
+  ],
+  "author": "alva chien",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/alvachien/acui5learn2/issues"
+  },
+  "homepage": "https://github.com/alvachien/acui5learn2#readme",
+  "devDependencies": {
+    "@ui5/cli": "^1.2.3",
+    "eslint": "^5.15.3",
+    "karma": "^4.0.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-qunit": "^3.0.0",
+    "qunitjs": "^2.4.1"
+  },
+  "dependencies": {
+    "@openui5/sap.m": "^1.64.0",
+    "@openui5/sap.ui.core": "^1.64.0",
+    "@openui5/sap.ui.layout": "^1.64.0",
+    "@openui5/themelib_sap_belize": "^1.64.0"
+  }
+}
